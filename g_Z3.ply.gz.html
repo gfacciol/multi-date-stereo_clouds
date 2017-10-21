@@ -60,6 +60,7 @@
 
 		viewer.scene.pointclouds[0].material.pointColorType = Potree.PointColorType.ELEVATION;
 		viewer.scene.pointclouds[0].material.pointSizeType = Potree.PointSizeType.ATTENUATED;
+      viewer.scene.pointclouds[0].material.elevationRange=[10,110];
 		});
 		
 		Potree.loadPointCloud("pointclouds/g_Z3.ply.gz/cloud.js", "g_Z3.ply.gz", e => {
